@@ -8,8 +8,8 @@ sources.
 Get the module:
 
 ```bash
-cd /etc/puppet
-git submodule add git@github.com:mobileeventguide.de/puppet-nginx-passenger.git
+git clone git://github.com/blt04/puppet-rvm.git /etc/puppet/modules/rvm
+git clone git://github.com/mobileeventguide/puppet-nginx-rvm-passenger /etc/puppet/modules/nginx_passenger
 ```
 ... or similar.
 
