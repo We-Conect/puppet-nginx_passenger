@@ -4,6 +4,7 @@ define nginx_passenger ($ruby_version, $passenger_version) {
 
   rvm_system_ruby { $ruby_version:
     ensure      => 'present',
+    default_use => true;
   }
 
   rvm_gem { "${ruby_version}/passenger":
