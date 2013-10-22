@@ -1,4 +1,4 @@
-define nginx_passenger ($ruby_version, $passenger_version) {
+define nginx_passenger ($ruby_version, $passenger_version, $nginx_config=template('nginx_passenger/nginx.conf.erb')) {
   include rvm
   include nginx_passenger::install
 
@@ -24,7 +24,7 @@ define nginx_passenger ($ruby_version, $passenger_version) {
 
   file { '/etc/nginx/nginx.conf':
     ensure  => present,
-    content => template('nginx_passenger/nginx.conf.erb'),
+    content => $nginx_config,
     require => File['/etc/nginx'],
   }
 
