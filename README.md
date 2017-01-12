@@ -9,7 +9,7 @@ Get the module:
 
 ```bash
 git clone git://github.com/blt04/puppet-rvm.git /etc/puppet/modules/rvm
-git clone git://github.com/mobileeventguide/puppet-nginx-rvm-passenger /etc/puppet/modules/nginx_passenger
+git clone git://github.com/We-Conect/puppet-nginx_passenger /etc/puppet/modules/nginx_passenger
 ```
 ... or similar.
 
